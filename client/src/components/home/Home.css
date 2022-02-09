@@ -1,0 +1,15 @@
+.home{
+    font-family: 'Roboto';    
+}
+
+
+#head{
+    color: darkred;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home p{
+    margin: 70px 100px 75px 100px;
+    text-align: justify;
+}

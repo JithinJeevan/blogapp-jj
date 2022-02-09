@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0%;
+}
+
+.meta{
+
+    width: 100%;
+    height: 5em;
+}
+
+.head{
+    
+    /* position: fixed; */
+    background-color: darkcyan;
+    
+}
+
+.logos{
+    color: whitesmoke;  
+    
+    
+}
