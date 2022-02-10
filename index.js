@@ -183,10 +183,10 @@ app.post('/api/login', async (req, res) => {
 
 
 // article Update
-app.post('/api/edit/:name', async (req, res,next) => {
+app.post('/api/edit/:name', async (req, res) => {
 
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
+    // res.header("Access-Control-Allow-Origin", "*");
+    // res.header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
     // const articleName = req.params.name;
     // const   description  = req.body.description;
     var found = await Article.find({title : req.params.name});
@@ -201,7 +201,7 @@ console.log(updated);
 console.log(found);
 res.send(updated);
 
-next();
+// next();
 
 })
 

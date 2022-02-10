@@ -22,7 +22,7 @@
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject"
   },
-  // "proxy": "http://localhost:7397",
+  "proxy": "http://localhost:7397",
   "eslintConfig": {
     "extends": [
       "react-app",
