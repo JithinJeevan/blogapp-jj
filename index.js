@@ -183,7 +183,7 @@ app.post('/api/login', async (req, res) => {
 
 
 // article Update
-app.post('/api/edit/:name', async (req, res) => {
+app.post('/api/edit/:name', async (req, res,next) => {
 
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
@@ -200,6 +200,8 @@ app.post('/api/edit/:name', async (req, res) => {
 console.log(updated);
 console.log(found);
 res.send(updated);
+
+next();
 
 })
 
