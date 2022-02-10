@@ -37,7 +37,7 @@ function UpdateArticle(props) {
     async function fetchAPI() {
 
         if(isSubmit===true){
-        axios.post(`http://localhost:5001/api/edit/${name}`,Data)
+        axios.post(`/api/edit/${name}`,Data)
         .then((response)=>{
             setarticleData(response)
             console.log(articleData);

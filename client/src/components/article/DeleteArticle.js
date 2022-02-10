@@ -22,7 +22,7 @@ function DeleteArticle(props) {
     async function fetchAPI() {
 
         
-        axios.delete(`http://localhost:5001/api/delete/${name}`)
+        axios.delete(`/api/delete/${name}`)
         .then((response)=>{
             setarticleData(response)
             console.log(articleData);

@@ -50,7 +50,7 @@ function Signup() {
     function register(){
 
         
-            axios.post('http://localhost:5001/api/register',formValues)
+            axios.post('/api/register',formValues)
             .then((response)=>
             {
               console.log(response.data);

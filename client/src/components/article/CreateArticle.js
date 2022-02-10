@@ -41,7 +41,7 @@ function CreateArticle(props) {
     async function fetchAPI() {
 
         if(isSubmit===true){
-        axios.post(`http://localhost:5001/api/article/add`,Data)
+        axios.post(`/api/article/add`,Data)
         .then((response)=>{
             setarticleData(response)
             console.log(articleData);

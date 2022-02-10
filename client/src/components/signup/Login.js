@@ -77,7 +77,7 @@ async function redirected(){
 }
 
  function  fetch(){
-    axios.post('http://localhost:5001/api/login',formValues).then((response)=>{
+    axios.post('/api/login',formValues).then((response)=>{
 
         setloginValues(response.data);
 

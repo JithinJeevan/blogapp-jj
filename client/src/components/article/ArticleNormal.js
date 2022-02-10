@@ -20,7 +20,7 @@ function ArticleNormal(props) {
     }, []);
 
     async function fetchAPI() {
-        const response = await fetch(`http://localhost:5001/api/articlelist`);
+        const response = await fetch(`/api/articlelist`);
         const body = await response.json();
         console.log(body);
         setArticle(body.find(i => i.title === name));

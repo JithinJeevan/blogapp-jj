@@ -21,7 +21,8 @@ mongoose.connect(process.env.MONGODB_CONNECTION_STRING,
     {
         useNewUrlParser:true,
         useUnifiedTopology: true
-    });
+    }
+    );
 
 
 // Each Article Fetch Route
@@ -183,10 +184,10 @@ app.post('/api/login', async (req, res) => {
 
 
 // article Update
-app.post('/api/edit/:name', async (req, res) => {
+app.post('/api/edit/:name', async (req, res,next) => {
 
-    // res.header("Access-Control-Allow-Origin", "*");
-    // res.header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
     // const articleName = req.params.name;
     // const   description  = req.body.description;
     var found = await Article.find({title : req.params.name});
@@ -201,7 +202,7 @@ console.log(updated);
 console.log(found);
 res.send(updated);
 
-// next();
+next();
 
 })
 
@@ -232,5 +233,5 @@ app.get("*", (req, res) => {
 
 // Port number
 app.listen(port, () => {
-    console.log("Listening on port 5001");
+    console.log("Listening on port 7397");
 })
