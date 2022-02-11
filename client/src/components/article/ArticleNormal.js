@@ -43,9 +43,9 @@ function ArticleNormal(props) {
     // if (!Article) return <Error />
 
     return (
-        <div >
+        <div className="admin">
 
-                <nav className="header">
+                <nav className="adminnavs">
                 <h2 className="logo">Metas Blog</h2> {/* JSX*/}
                 <div className="articles">
                     <Link className="link" to="/home">Home</Link>
