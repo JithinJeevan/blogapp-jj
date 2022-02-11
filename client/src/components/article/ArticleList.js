@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+
+
 import './Article.css';
 
 
@@ -25,8 +27,8 @@ function ArticleList(props) {
 
     }
     return (
-        <div>
-            <nav className="header">
+        <div className="admin">
+            <nav className="adminnavs">
                 <h2 className="logo">Metas Blog</h2> {/* JSX*/}
                 <div className="articles">
                     <Link className="link" to="/home">Home</Link>

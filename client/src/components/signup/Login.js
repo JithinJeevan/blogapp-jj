@@ -63,11 +63,11 @@ async function redirected(){
     console.log(password);
     if( chk==="6203f78e46d339a4d8c5733a") {
         
-       navigate("/header",{replace:true});
+       navigate("/home/first",{replace:true});
     }
   else  if(  formValues.username===username && formValues.password===password) {
         
-        navigate("/header/second",{replace:true});
+        navigate("/home",{replace:true});
      }
  
     

@@ -1,6 +1,7 @@
 import React, {useEffect, useState } from 'react';
 import { useParams,Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import './UpdateArticle.css';
 
 function UpdateArticle(props) {
 
@@ -55,8 +56,8 @@ function UpdateArticle(props) {
     
     
     return (
-        <div>
-            <nav className="header">
+        <div className="update">
+            <nav className="updatenavs">
                 <h2 className="logo">Metas Blog</h2> {/* JSX*/}
                 <div className="articles">
                     <Link className="link" to="/home/first">Home</Link>
@@ -88,7 +89,7 @@ function UpdateArticle(props) {
                        
                        
                      </div>
-                     <button onClick={handleSubmit} type="text" class="submit">submit</button>
+                     <button onClick={handleSubmit} type="text" className="submit">submit</button>
                    </div>
             }
         </div>

@@ -1,6 +1,4 @@
-
-  
-  .title {
+.title {
     color: #eee;
     font-family: sans-serif;
     font-size: 18px;
@@ -13,7 +11,7 @@
     font-family: sans-serif;
     font-size: 15px;
     font-weight: 600;
-    margin-top: 8px;
+    margin-top: -8px;
   }
   
   .input-container {
@@ -26,11 +24,11 @@
  
 
   .input {
-    background-color: #e3e5ee;
+    background-color: #bcc2f7;
     border-radius: 12px;
     border: 0;
     box-sizing: border-box;
-    color: rgb(15, 9, 9);
+    color: rgb(10, 10, 10);
     font-size: 18px;
     height: 10em;
     outline: 0;
@@ -38,17 +36,17 @@
     width: 60em;
   }
   
-  .create{
+  .update{
     position: relative;
     width: 100%;
     
 }
 
-.createnav{
+.updatenavs{
     position: relative;
     left: 0;
     width: 100%;
-    margin-top: -10.6em;
+    margin-top: -11.1em;
     height: 50px;
     z-index: 1;
     position: fixed;
@@ -77,7 +75,7 @@
  
   
   .placeholder {
-    color: #0f0f18;
+    color: #e4e4f1;
     font-size: 20px;
     left: 20px;
     line-height: 7px;
@@ -85,7 +83,7 @@
     position: absolute;
     transform-origin: 0 50%;
     transition: transform 200ms, color 200ms;
-    top: -75px;
+    top: -74px;
   }
   
   .input:focus ~ .placeholder,
@@ -110,7 +108,8 @@
     cursor: pointer;
     font-size: 18px;
     height: 50px;
-    margin-top: 5em;
+    position: relative;
+    top: 8em;
      outline: 0;
     text-align: center;
     width: 40%;

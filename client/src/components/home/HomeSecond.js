@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Home.css';
 function HomeSecond(props) {
     return (
         <div className='home'>
@@ -7,7 +8,7 @@ function HomeSecond(props) {
 <nav className="header">
                 <h2 className="logo">Metas Blog</h2> {/* JSX*/}
                 
-                <div className="articles">
+                <div className="links">
                     
                     <Link className="link" to="/home">Home</Link>
                     

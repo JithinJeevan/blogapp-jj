@@ -1,23 +1,26 @@
 import React, {useEffect, useState } from 'react';
 import { useParams,Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import './DeleteArticle.css';
 
 function DeleteArticle(props) {
     
     const [articleData, setarticleData] = useState([]);
+    const [isSubmit, setIsSubmit] = useState(false);
     var {name}= useParams();
     var navigate=useNavigate();
 
     const handleSubmit = (event) => {
         event.preventDefault();
         
-        
+        setIsSubmit(true);
+        fetchAPI();
         
         goto();
     }
-    useEffect(()=>{
-        fetchAPI();
-    },[]);
+    // useEffect(()=>{
+        
+    // },[handleSubmit]);
 
     async function fetchAPI() {
 
@@ -39,8 +42,8 @@ function DeleteArticle(props) {
     }
     
     return (
-        <div>
-            <nav className="header">
+        <div className="create">
+            <nav className="createnavs">
                 <h2 className="logo">Metas Blog</h2> {/* JSX*/}
                 <div className="articles">
                     <Link className="link" to="/home/first">Home</Link>
@@ -56,12 +59,9 @@ function DeleteArticle(props) {
                      <div className="form">
                      
                      
-                     <div className="input-container ic2">
-                     <label  className="placeholder">Delete article {name} ?</label>
-                       
-                       </div>
-                       
                      
+                       
+                       <h3 className='delete'>Delete article {name} ?</h3>
                      <button onClick={handleSubmit} type="text" class="submit">Delete</button>
                    
                    </div>

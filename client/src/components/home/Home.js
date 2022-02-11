@@ -8,7 +8,7 @@ function Home(props) {
 
 <nav className="header">
                 <h2 className="logo">Metas Blog</h2> {/* JSX*/}
-                <div className="articles">
+                <div className="links">
                     
                     <Link className="link" to="/home/first">Home</Link>
                     
