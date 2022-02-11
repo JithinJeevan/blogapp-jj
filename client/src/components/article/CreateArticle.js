@@ -58,7 +58,7 @@ function CreateArticle(props) {
                 <div className="articles">
                     <Link className="link" to="/home/first">Home</Link>
                     
-                    <Link className="link" to={`/article-admin/`}>Articles</Link>
+                    <Link className="link" to={`/article-admin`}>Articles</Link>
                     <Link className="link" to={`/article/add`}>Create Articles</Link>
                     <Link className="link" to={`/`}>Logout</Link>
                 </div>
