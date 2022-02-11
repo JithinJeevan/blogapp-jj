@@ -85,7 +85,7 @@ function Signup() {
                         <input type="email" name="email" placeholder="Email" required="" value={formValues.email} onChange={handleChange} />
                         <p className='error'>{formErrorValues.email}</p>
                         <input type="password" name="password" placeholder="Password" required="" value={formValues.password} onChange={handleChange} />
-                        { Values==="Username or Email already exists" && isSubmit ? (<h4>Username or Email already exists</h4>) : (<h4></h4>)}
+                        {/* { Values==="Username or Email already exists" && isSubmit ? (<h4>Username or Email already exists</h4>) : (<h4></h4>)} */}
                         <p className='error'>{formErrorValues.password}</p>
                         <button>Sign up</button>
 
